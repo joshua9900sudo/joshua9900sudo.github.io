@@ -1,5 +1,6 @@
-Here you can say lots of fun things about your site.
+Name : Joshua Yechan Nam  
+Education  
+- Yonsei University (Mirae)
+	- Undergraduate, Data Science, Electrical Electronic Engineering
+	- 2021 - 2025
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
