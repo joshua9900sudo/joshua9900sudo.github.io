@@ -1,6 +1,8 @@
-Name : Joshua Yechan Nam  
-Education  
+### Article summarization, study and records.
+### Data Science, Electronic Engineering
+
+### Education
 - Yonsei University (Mirae)
-	- Undergraduate, Data Science, Electrical Electronic Engineering
+	- Bachelor's Degree, Data Science, Electrical Electronic Engineering
 	- 2021 - 2025
 
