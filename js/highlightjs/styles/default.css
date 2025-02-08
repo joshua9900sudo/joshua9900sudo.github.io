@@ -48,7 +48,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .hljs-title,
 .hljs-section {
-  color: #880000;
+  /*color: #880000;*/
+  color: #ffffff; /* for dark mode */
   font-weight: bold;
 }
 
