@@ -1,7 +1,11 @@
-논문 정리
+# AttAcc PIM accelerator Paper Summarization
+- EEE4610 Capstone Design
+- lab : DTL
+- Professor : Prof. Eui-Young Chung
+- ASPLOS__2024__AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference
+
 
 # 1. Introduction
-
 TbGM 특히, Gen 단계의 attention 및 FC layer 전체 실행 시간의 대부분을 차지.  
 기존 시스템은 TbGM의 attention layer을 효과적으로 처리x.  
 -> AttAcc라는 PIM 기반 아키텍처를 제안, GPU+PIM => heterogeneous system 설계  
