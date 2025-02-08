@@ -37,7 +37,7 @@ hr {
   font-size: 0.8em;
   /*opacity: 0.5;*/
   opacity: 0.7; /* 가독성을 위해 약간 더 밝게 설정 */
-  color: #bbbbbb; /* 글자색을 밝은 회색으로 변경 */
+  color: #ffffff; 
 }
 
 .post_navi .post_navi-item {
