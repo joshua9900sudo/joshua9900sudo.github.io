@@ -10,6 +10,21 @@ hr {
   border-color: #444444; /* dark gray*/
 }
 
+
+.site-title {
+  color: #ffffff; /* 흰색으로 변경 */
+  font-size: 2em; /* 글자 크기 조정 */
+  font-weight: bold; /* 글자 굵기 설정 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+
+/*.post-title {
+  color: #ffffff; /* 흰색 (가독성을 높이기 위한 색상) */
+/*  font-size: 2.5em; /* 글자 크기 조정 (필요 시) */
+/*  font-weight: bold; /* 글자 굵기 조정 (필요 시) */
+/*} */
+
 /* Post navigation links */
 .post_navi {
   display: flex;
