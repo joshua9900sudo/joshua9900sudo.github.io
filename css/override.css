@@ -57,8 +57,8 @@ hr {
 }
 
 .post_navi .post_navi-arrow {
-  opacity: 0.6; /* 다크 모드에서 가독성을 위해 더 밝게 */
-  color: #bbbbbb;
+  /*opacity: 0.6; /* 다크 모드에서 가독성을 위해 더 밝게 */
+  color: #ffffff;
 }
 
 .post_navi .nav_prev .post_navi-arrow {
