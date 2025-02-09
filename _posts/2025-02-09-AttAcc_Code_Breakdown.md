@@ -20,7 +20,7 @@ structure. This accelerator is simulated using a "properly modified <a href="htt
 </a>".
 
 <figure style="text-align: center;">
-  <img src="img/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png" alt="inference_process_of_GPT.png">
+  <img src="./img/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png" alt="inference_process_of_GPT.png">
   <figcaption>inference_process_of_GPT.png[^1]</figcaption>
 </figure>
 
