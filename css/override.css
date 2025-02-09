@@ -18,6 +18,12 @@ hr {
   text-decoration: none; /* 링크 밑줄 제거 */
 }
 
+.site_nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
 
 /*.post-title {
   color: #ffffff; /* 흰색 (가독성을 높이기 위한 색상) */
