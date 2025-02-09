@@ -7,9 +7,7 @@ body {
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
- /* border-color: #444444; /* dark gray*/
- /* test */
-  border-color: #ffffff; /* dark gray*/
+  border-color: #444444; /* dark gray*/
 }
 
 
@@ -36,7 +34,9 @@ hr {
 /* Post navigation links */
 .post_navi {
   display: flex;
-  background-color: #1e1e1e; /* 네비게이션 배경을 어두운 색으로 변경 */
+  /*background-color: #1e1e1e; /* 네비게이션 배경을 어두운 색으로 변경 */
+  /* test */
+  background-color: #ffffff; /* 네비게이션 배경을 어두운 색으로 변경 */
   padding: 10px; /* ?? */
   border-radius: 5px; /* ?? */
 }
