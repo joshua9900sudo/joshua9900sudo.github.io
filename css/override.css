@@ -34,9 +34,7 @@ hr {
 /* Post navigation links */
 .post_navi {
   display: flex;
-  /*background-color: #1e1e1e; /* 네비게이션 배경을 어두운 색으로 변경 */
-  /* test */
-  background-color: #ffffff; /* 네비게이션 배경을 어두운 색으로 변경 */
+  background-color: #1e1e1e; /* 네비게이션 배경을 어두운 색으로 변경 */
   padding: 10px; /* ?? */
   border-radius: 5px; /* ?? */
 }
@@ -83,4 +81,17 @@ hr {
   transform: translateY(-50%);
   font-size: 2.5em;
   opacity: 0.3;
+}
+
+
+pre, code {
+	background-color : #2e2e2e;
+	color: #f8f8f2;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
