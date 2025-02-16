@@ -20,7 +20,7 @@ structure. This accelerator is simulated using a "properly modified <a href="htt
 </a>".
 
 <figure style="text-align: center;">
-  <img src="./assets/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png" alt="inference_process_of_GPT.png">
+  <img src="../assets/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png" alt="inference_process_of_GPT.png">
   <figcaption>inference_process_of_GPT.png[^1]</figcaption>
 </figure>
 
@@ -79,7 +79,9 @@ Let's find how to simulate and set arguments according to given conditions. Some
 - Memory : 640GB HBM3 per DGX system (80GB * 8)
 - Word size (precision) : FP16 (16-bit Floating Point)
 - Model : GPT-3 175B
-```bash
+
+````bash
+
 # Run Sec. 3.2 Condition of this paper
 $ cd path/to/attacc_simulator
 $ python main.py --help
@@ -113,10 +115,11 @@ $ python main.py --system dgx --gpu A100a --ngpu 8 --gmemcap 80 --model GPT-175B
 dgx: (A100a x 8), [Lin, Lout, batch]: [2048, 128, 1]
 ---Run simple mode Batch 1 Lin 2048 Lout 128 pipe False parall False---
     Batch: 1, Throughput: 32.22 tokens/s Latency: 31.03ms, pipe/ff_parallel: False/False, powerlimit: False
-```
+````
 
 - The setting of those arguments is the default setting. You can get
 same result w/o those arguments.
+
 ```bash
 $ python main.py --system dgx --gpu A100a --ngpu 8 --gmemcap 80 --model GPT-175B --word 2
 dgx: (A100a x 8), [Lin, Lout, batch]: [2048, 128, 1]
