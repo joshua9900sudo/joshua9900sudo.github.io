@@ -1,7 +1,7 @@
 ---
 #title: "Sample Post"
 date: 2025-01-30 10:00:00  # Created date
-last_modified_at: 2025-02-09 23:00:00  # Modified date
+last_modified_at: 2025-02-26 08:00:00  # Modified date
 ---
 
 
@@ -78,4 +78,72 @@ DGX+AttAcc는 batch 크기를 증가시켜 최대 56배 높은 처리량을 달�
 * AttAcc는 대규모 TbGM 추론을 효과적으로 지원할 수 있는 차세대 아키텍처로 자리 잡을 가능성이 큼.
 
 # 11. Acknowledgments
+
+
+
+# Next Research Brainstorming
+## Systolic Array GEMV Unit을 활용한 GQA Design (Refer to Sec. 8)
+### GQA 혹은 MAQ를 적용, Systolic array로 GEMV 유닛 설계, trade-off 계산
+...  
+
+### GQA 혹은 MQA를 적용한 Systolic Array 기반 GEMV 유닛 설계 
+
+- Tradeoff : MHA vs GQA, MQA
+
+	AttAcc는 기존 MHA 방식에서 독립적인 KV를 활용
+	
+	GQA(Grouped-Query Attention) 및 MQA(Multi-Query Attention)는 KV를 공유   
+	-> 메모리 용량과 대역폭 요구사항을 줄일 수 있음 / 다만, AttAcc의 높은 BW가 의미 없어짐
+	
+	Systolic Array 기반의 GEMV 유닛을 설계 시  
+	-> KV matrices를 reuse하여 aggregate BW를 높일 수 있음 / Higher area cost
+
+
+- 연구 방향
+
+	기존 GEMV unit을 Systolic Array로 변경 후 성능 테스트  
+	MQA를 구현한 뒤, 한계점을 확인하고 GQA를 통해 group size를 조절하며 optimization 진행
+
+- 코드 변경
+
+	```src/devices.py``` (GEMV 유닛 변경)
+	
+	FC 레이어, MatMul 연산 등 세부 함수를 수정하여 Systolic Array로 변경  
+	(기존 방식) 각 head는 독립적인 KV matrices -> KV matrices 공유 가능   
+	KV matrices를 reuse하여 BW를 높임  
+	연산 분할 방식을 최적화하여, GQA/MQA 환경에서도 높은 PIM 연산 성능을 유지.  
+
+	1. Compute Time 수정
+	
+		xPU._compute_time()   
+		PIM._compute_time()  
+	
+	2. 메모리 이동 및 BW 관련
+	
+		xPU._get_traffic()  
+		xPU._mem_time()  
+		PIM._mem_time()  
+	
+	3. 타일링 최적화 (L1, L2 Cache 고려)
+	
+		xPU._get_optimal_tile()   
+
+	```src/config.py``` (모델 설정 추가)
+
+		기존 MHA 구조에서 GQA/MQA가 가능한 구조로 변경  
+		Systolic Array mode가 가능하게 변경
+
+- 테스트 할 것들
+	- GQA/MQA 환경에서 AttAcc의 성능 변화(Memory & BW requirement change, Performance change)
+	- Systolic Array 기반 GEMV 유닛 설계 제안(Aggregate BW, Area cost, Performance change)
+
+- Tradeoff 분석
+	- 에너지 소모
+	- performance
+	- SLO
+	- Area cost
+	- Resource Requirement  
+
+	등을 고려하여 최적의 GQA 또는 모델을 도출
+
 

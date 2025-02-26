@@ -153,6 +153,14 @@ dgx: (A100a x 8), [Lin, Lout, batch]: [32, 32, 1]
     Batch: 1, Throughput: 36.86 tokens/s Latency: 27.13ms, pipe/ff_parallel: False/False, powerlimit: False
 
 
+# This paper, 4.1, within 8th paragraph
+$ python main.py --system dgx --gpu A100a --ngpu 8 --gmemcap 80 --model GPT-175B --word 2 --lin 2048 --lout 128 --batch 50
+python main.py --system dgx --gpu A100a --ngpu 8 --gmemcap 80 --model GPT-175B --word 2 --lin 2048 --lout 128 --batch 50
+dgx: (A100a x 8), [Lin, Lout, batch]: [2048, 128, 50]
+---Run simple mode Batch 50 Lin 2048 Lout 128 pipe False parall False---
+    Batch: 50, Throughput: 900.32 tokens/s Latency: 55.54ms, pipe/ff_parallel: False/False, powerlimit: False
+```
+
 [^1]: <a href="https://scale.snu.ac.kr/papers/2024-04-Conference-ASPLOS-AttAcc.pdf" 
 target="_blank">AttAcc! Unleashing the Power of PIM for Batched Transformer-based Generative Model Inference</a> Figure 1.
 
