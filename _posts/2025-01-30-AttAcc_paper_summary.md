@@ -82,11 +82,8 @@ DGX+AttAcc는 batch 크기를 증가시켜 최대 56배 높은 처리량을 달�
 
 
 # Next Research Brainstorming
-## Systolic Array GEMV Unit을 활용한 GQA Design (Refer to Sec. 8)
-### GQA 혹은 MAQ를 적용, Systolic array로 GEMV 유닛 설계, trade-off 계산
-...  
 
-### GQA 혹은 MQA를 적용한 Systolic Array 기반 GEMV 유닛 설계 
+### GQA 혹은 MQA를 적용한 Systolic Array 기반 GEMV 유닛 설계 (Refer to Sec. 8)
 
 - Tradeoff : MHA vs GQA, MQA
 
