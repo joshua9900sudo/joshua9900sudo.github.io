@@ -22,9 +22,10 @@ structure. This accelerator is simulated using a "properly modified <a href="htt
 <figure style="text-align: center;">
   <img src="../assets/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png" alt="inference_process_of_GPT.png">
   <figcaption>inference_process_of_GPT.png[^1]</figcaption>
-</figure>
+</figure>  
 
-![inference_process_of_GPT.png[^1]](https://raw.githubusercontent.com/joshua9900sudo/joshua9900sudo.github.io/refs/heads/main/assets/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png)
+
+![inference_process_of_GPT.png[^1]](https://raw.githubusercontent.com/joshua9900sudo/joshua9900sudo.github.io/main/assets/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png)
 
 
 
