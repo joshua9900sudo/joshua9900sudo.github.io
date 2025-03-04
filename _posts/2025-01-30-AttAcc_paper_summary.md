@@ -5,7 +5,7 @@ last_modified_at: 2025-02-26 08:00:00  # Modified date
 ---
 
 
-# AttAcc PIM accelerator Paper Summarization
+# AttAcc PIM accelerator Paper Summary
 - EEE4610 Capstone Design
 - lab : DTL
 - Professor : Prof. Eui-Young Chung
