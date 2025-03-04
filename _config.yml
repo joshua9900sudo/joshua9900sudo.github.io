@@ -16,6 +16,11 @@ linkedin_username: "Yechan (Joshua) Nam"
 #youtube_username: username
 #googleplus_username: +username
 
+
+# Mar 4, 2025
+# To solve problem that if created time is future compared to Github server time, posts are not shown.
+future: true
+
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
