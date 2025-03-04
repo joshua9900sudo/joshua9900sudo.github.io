@@ -19,7 +19,7 @@ linkedin_username: "Yechan (Joshua) Nam"
 
 # Mar 4, 2025
 # To solve problem that if created time is future compared to Github server time, posts are not shown.
-future: true
+future: true # -> working
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
