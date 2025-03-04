@@ -24,6 +24,10 @@ structure. This accelerator is simulated using a "properly modified <a href="htt
   <figcaption>inference_process_of_GPT.png[^1]</figcaption>
 </figure>
 
+![inference_process_of_GPT.png[^1]](https://raw.githubusercontent.com/joshua9900sudo/joshua9900sudo.github.io/refs/heads/main/assets/2025-02-09-AttAcc_Code_Breakdown/inference_process_of_GPT.png)
+
+
+
 
 ## 1. Set up your local environment according to the prerequisites mentioned in the README.md.
 - Python
