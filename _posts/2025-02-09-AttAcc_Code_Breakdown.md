@@ -1,4 +1,4 @@
-# The simulator for AttAcc
+# Breakdown of AttAcc
 - This post breaks down the simulator for AttAcc(Attention Accelerator).
 
 - The article(henceforth this paper) : 

@@ -4,6 +4,8 @@ date: 2025-03-04 10:07:00  # Created date
 last_modified_at: 2025-03-04 10:08:00  # Modified date
 ---
 
+# Statistical Metrics
+
 ## MAE (Mean Absolute Error, 평균 절대 오차)
 
 ### 정의
