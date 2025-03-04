@@ -1,5 +1,4 @@
-### Article summarization, study and records.
-### Data Science, Electronic Engineering
+### Article Summary and Study
 
 ### Education
 - Yonsei University (Mirae)
