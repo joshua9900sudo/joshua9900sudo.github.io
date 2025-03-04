@@ -1,6 +1,21 @@
 ---
 #title: "Sample Post"
 date: 2025-03-04 10:07:00  # Created date
+last_modified_at: 2025-03-04 10:10:00  # Modified date
+---
+
+# test____________
+# Statistical Metrics (name must be not same)
+This summary was conducted during an internship at IODA(Hanyang University).  
+IODA Lab. : 
+
+# Questions While Reading
+## Abstract  
+- Difference between the existing 'Data-Driven methods' and 'Model-based methods'.
+
+---
+#title: "Sample Post"
+date: 2025-03-04 10:07:00  # Created date
 #last_modified_at: 2025-03-04 10:10:00  # Modified date
 ---
 
