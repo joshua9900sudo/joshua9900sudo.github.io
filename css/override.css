@@ -51,7 +51,7 @@ hr {
   width: 50%;
   position: relative;
   /*color: inherit !important;*/
-  color: #ffffff !important; /* 링크 색상을 흰색으로 변경 */
+  color: #ffffff; /* 링크 색상을 흰색으로 변경 */
 }
 
 .post_navi .nav_prev {
