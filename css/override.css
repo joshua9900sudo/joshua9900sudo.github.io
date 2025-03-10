@@ -1,3 +1,27 @@
+/* 기본 링크 스타일 (모든 a 태그에 적용) */
+a {
+  color: #ffffff !important; /* 링크 색상을 흰색으로 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 내비게이션 바 링크 스타일 */
+.site-nav a {
+  color: #dddddd !important; /* 내비게이션 바 링크를 연한 회색으로 */
+}
+
+/* 특정 클래스 `.page-link` 스타일 */
+a.page-link {
+  color: #ffffff !important; /* 링크 색상을 흰색으로 */
+  background-color: transparent !important; /* 배경을 투명하게 */
+}
+
+/* 마우스 오버 시 색상 변경 */
+a:hover {
+  color: #ffcc00 !important; /* 마우스를 올렸을 때 색상 변경 */
+}
+
+/*      ads;lfjsdlfja;sdkj       */
+
 /* dark mode */
 body {
 	background-color: #000000;
