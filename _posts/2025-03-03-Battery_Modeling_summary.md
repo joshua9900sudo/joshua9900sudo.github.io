@@ -21,21 +21,37 @@ SOH(state-of-health) and RUL(remaining useful life).
 in **a charge/discharge cycle**.
 - SOH & RUL is for prognosis[^1] in the **entire life cycle**.
 
-### EOD prediction : Model-based VS. Data-driven
-- EOD prediction fall into two categories:
-	- Model-based methods :
-		- They describe battery degradation using mathematical models.  
-		Because they consist of PDEs, difficult to solve.
-	- Data-driven methods : 
+### Definitions of SOC, EOD, SOH and RUL
 
-### Why models containg PDEs are difficult?
+### EOD prediction : Model-based VS. Data-driven methods
+- EOD prediction fall into two categories:
+	- Model-based methods : Describe battery degradation 
+	using mathematical models.
+		- Advantage : Relatively high precision accuracy
+		- Disadvantage : Difficult to solve due to PDEs in models.
+	- Data-driven approaches : Map input data to output data 
+	w/o any physics
+		- Advantage : easily map input to output w/o physics
+		- Disadvantage : Requirement of large labeled data and
+		high-performance HW,
+		Time-consuming data collection tasks and 
+		DL's 'black-box' nature(Users want explanations).
+
+### Why models containing PDEs are difficult to solve?
 - High computational costs
 - Sensitive to initial & boundary conditions
 - Nonlinear
 
+### PINN(Physics-informed NN) = Model-based + Data-driven methods
+- Thelen et al. [45] and Lui et al. [46]'s research
+	- It tracks only 3 physics parameters.
 
+- Shi et al.[47], Tian et al.[48]
+	- Only combine physical knowledge to preprocess the data.
+	- No structural changes in the NN.
 
-
-
+- Nascimento et al.[49]
+	- Hybrid modeling method. physics-informed RNN(PIRNN)
+	- But not fully incoporated physics to the structure of the NN.
 
 [^1] : Estimation approximates *current* values or states while Prognosis predicts *future* trends.

@@ -1,11 +1,10 @@
 ---
-title: "[EEE4610] Explore Sparse Attention Mechanisms"
+#title: "[EEE4610] Explore Sparse Attention Mechanisms"
 date: 2025-03-03 10:07:00  # Created date
 last_modified_at: 2025-03-04 10:10:00  # Modified date
 ---
 
 # [EEE4610] Explore Sparse Attention Mechanisms
-
 Our team suggested some ideas, and our graduate assistant guided our research direction as follows:  
 - Refer to some accelerator papers on existing sparsity operations and consider how to apply them to PIM.  
 - Dynamically offload computational burdens from the GPU to PIM. 
